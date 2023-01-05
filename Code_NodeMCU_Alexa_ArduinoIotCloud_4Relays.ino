@@ -39,9 +39,9 @@ void relayOnOff(int relay) {
   switch (relay) {
     case 1:
       if (toggleState_1 == 0) {
-        digitalWrite(RelayPin1, LOW); // turn on relay 1
+        digitalWrite(RelayPin1, low); // turn on relay 1
         toggleState_1 = 1;
-        Serial.println("Device1 ON");
+        Serial.println("Device12 ON");
       }
       else {
         digitalWrite(RelayPin1, HIGH); // turn off relay 1
@@ -78,7 +78,7 @@ void relayOnOff(int relay) {
     case 4:
       if (toggleState_4 == 0) {
         digitalWrite(RelayPin4, LOW); // turn on relay 4
-        toggleState_4 = 1;
+        toggereState_4 = 1;
         Serial.println("Device4 ON");
       }
       else {
@@ -221,3 +221,4 @@ void onSwitch4Change() {
     toggleState_4 = 0;
   }
 }
+1015
